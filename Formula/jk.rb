@@ -11,7 +11,7 @@ class Jk < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/addozhang/jk/releases/download/v0.3.0/jk_0.3.0_darwin_amd64.tar.gz"
-      sha256 "95117f7688045954e9511376e92c0004dd46aab09499f3ab2151242a3583710f"
+      sha256 "3236e1b3258696ea1b6316dc425d3baaa9a6273abc5dfdb788c1a82ae5ac81ac"
 
       define_method(:install) do
         bin.install "jk"
@@ -19,7 +19,7 @@ class Jk < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/addozhang/jk/releases/download/v0.3.0/jk_0.3.0_darwin_arm64.tar.gz"
-      sha256 "891183bbdf0975be1c6755bd40f7264be4c8eb0bf3937fa819850f9f932438aa"
+      sha256 "e3d6e58da0b04a66f5f90bc7e9d469bc9f064fea4991057398a38b354ce9296f"
 
       define_method(:install) do
         bin.install "jk"
@@ -30,14 +30,14 @@ class Jk < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/addozhang/jk/releases/download/v0.3.0/jk_0.3.0_linux_amd64.tar.gz"
-      sha256 "63358068efa5a565806ca7c12907f957e90a363a852a8aef3a02d08f70f9e629"
+      sha256 "7e97a50fb79b96f807b007d933052c96093539a36fffc057d4f5e34477bf2d75"
       define_method(:install) do
         bin.install "jk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/addozhang/jk/releases/download/v0.3.0/jk_0.3.0_linux_arm64.tar.gz"
-      sha256 "d0fe4e3d0c806782f8429b391455877051f32f8c182e851540d27b2ad6be17db"
+      sha256 "2f213900708d384baed4ceea66688b5a015812006705d487adb5a376aed98a3f"
       define_method(:install) do
         bin.install "jk"
       end
