@@ -5,21 +5,21 @@
 class Jk < Formula
   desc "Pipeline-native Jenkins CLI"
   homepage "https://github.com/addozhang/jk"
-  version "0.4.0"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/addozhang/jk/releases/download/v0.4.0/jk_0.4.0_darwin_amd64.tar.gz"
-      sha256 "3966232eb9f2bfeb65f8c7424f6898b179be44805dfcef24e3b22520bef8c9f5"
+      url "https://github.com/addozhang/jk/releases/download/v0.5.0/jk_0.5.0_darwin_amd64.tar.gz"
+      sha256 "fbf1cee1d46c84a71f9e81715da5f43aa52c41b86c14f05f951b88020c3c23bf"
 
       define_method(:install) do
         bin.install "jk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/addozhang/jk/releases/download/v0.4.0/jk_0.4.0_darwin_arm64.tar.gz"
-      sha256 "9912edb76f7115ec630d64f6b44a3f19b6f7f626f13d552d0db47de123a42bf4"
+      url "https://github.com/addozhang/jk/releases/download/v0.5.0/jk_0.5.0_darwin_arm64.tar.gz"
+      sha256 "b6660a35153ebce72091b6f100fd14d8d82b2df7a4f2d12f7f69beda03b275d4"
 
       define_method(:install) do
         bin.install "jk"
@@ -29,15 +29,15 @@ class Jk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/addozhang/jk/releases/download/v0.4.0/jk_0.4.0_linux_amd64.tar.gz"
-      sha256 "e0624b8b4e2c5ee451c770686f4d51dd9efd746520bebe900679506cb3a30f32"
+      url "https://github.com/addozhang/jk/releases/download/v0.5.0/jk_0.5.0_linux_amd64.tar.gz"
+      sha256 "f270c7020e15703dcbe1cb3a6d17564f80da714cad7b27f80f7a1fe947bae3a9"
       define_method(:install) do
         bin.install "jk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/addozhang/jk/releases/download/v0.4.0/jk_0.4.0_linux_arm64.tar.gz"
-      sha256 "43501b629ab299885cb0f683935e364a8da4e8f5e32a5e62070aaf1233e6ad69"
+      url "https://github.com/addozhang/jk/releases/download/v0.5.0/jk_0.5.0_linux_arm64.tar.gz"
+      sha256 "a6276b4c625d980ceca065b64d68606e94b99514e012b877110e8def8cb10049"
       define_method(:install) do
         bin.install "jk"
       end
