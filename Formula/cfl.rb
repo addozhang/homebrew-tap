@@ -5,21 +5,21 @@
 class Cfl < Formula
   desc "URL-native Confluence Server/DC CLI"
   homepage "https://github.com/addozhang/confluence-cli"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/addozhang/confluence-cli/releases/download/v0.2.1/cfl_0.2.1_darwin_amd64.tar.gz"
-      sha256 "352c5f8662d96f0ce530baf8b8ca89c4ba617787b234272d39aa168834a00201"
+      url "https://github.com/addozhang/confluence-cli/releases/download/v0.2.2/cfl_0.2.2_darwin_amd64.tar.gz"
+      sha256 "1a6707774f488fa729a523eca1b04da1c1a08041ed5797a08b6e1934aa1382ff"
 
       define_method(:install) do
         bin.install "cfl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/addozhang/confluence-cli/releases/download/v0.2.1/cfl_0.2.1_darwin_arm64.tar.gz"
-      sha256 "16819ef36d5d959826b0607ca48f23acc7185dd86b81d594de3e71792fe5a043"
+      url "https://github.com/addozhang/confluence-cli/releases/download/v0.2.2/cfl_0.2.2_darwin_arm64.tar.gz"
+      sha256 "968403d2d6e5c27f685ab34ebf14d04bd4305daf11501b505377b15c7663da3b"
 
       define_method(:install) do
         bin.install "cfl"
@@ -29,15 +29,15 @@ class Cfl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/addozhang/confluence-cli/releases/download/v0.2.1/cfl_0.2.1_linux_amd64.tar.gz"
-      sha256 "98cb872396318cd0f808b9c8963124936507153a17edc9a5ed9b3d23ca79e268"
+      url "https://github.com/addozhang/confluence-cli/releases/download/v0.2.2/cfl_0.2.2_linux_amd64.tar.gz"
+      sha256 "08123e3eb674ba54b026123b84903a8990251dcea473444c55760402d5e7346e"
       define_method(:install) do
         bin.install "cfl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/addozhang/confluence-cli/releases/download/v0.2.1/cfl_0.2.1_linux_arm64.tar.gz"
-      sha256 "70a73d26e973e6e0cc74fce82c0cabf20fc48ab8f4c31bd158e2d01bff9dbb1f"
+      url "https://github.com/addozhang/confluence-cli/releases/download/v0.2.2/cfl_0.2.2_linux_arm64.tar.gz"
+      sha256 "87eeb776efac849c4e363c40fa3adb5c41049dee2b7f5cf5a1f92bdf69e90423"
       define_method(:install) do
         bin.install "cfl"
       end
